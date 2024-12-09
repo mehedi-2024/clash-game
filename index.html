@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-[#010519] min-h-screen">
+    <!-- main container -->
+    <div class="h-screen w-96 m-auto bg-gradient-to-b from-[#712ace] to-[#bb00ff] bg-">
+        <section class="" id="sec1">
+            <div class="flex flex-col items-center justify-center h-screen">
+                <h1 class="text-5xl font-extrabold text-white text-center mb-10">Show Your Typing Skill</h1>
+            <div class="btn bg-white border-none text-black font-bold hover:bg-gray-400" id="playNow">Play Now</div>
+            </div>
+        </section>
+
+
+        <section class="h-screen py-5 hidden" id="sec2">
+            <div class="flex flex-col justify-around items-center h-full">
+                <div class="w-80 mx-auto h-[200px] border-[20px] border-[#232346C4] rounded-lg grid place-content-center text-6xl font-bold text-white" id="display">F</div>
+
+                <!-- keyboard -->
+                 <div class="">
+                    <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd id="q" class="kbd">q</kbd>
+                        <kbd id="w" class="kbd">w</kbd>
+                        <kbd id="e" class="kbd">e</kbd>
+                        <kbd id="r" class="kbd">r</kbd>
+                        <kbd id="t" class="kbd">t</kbd>
+                        <kbd id="y" class="kbd">y</kbd>
+                        <kbd id="u" class="kbd">u</kbd>
+                        <kbd id="i" class="kbd">i</kbd>
+                        <kbd id="o" class="kbd">o</kbd>
+                        <kbd id="p" class="kbd">p</kbd>
+                      </div>
+                      <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd id="a" class="kbd">a</kbd>
+                        <kbd id="s" class="kbd">s</kbd>
+                        <kbd id="d" class="kbd">d</kbd>
+                        <kbd id="f" class="kbd">f</kbd>
+                        <kbd id="g" class="kbd">g</kbd>
+                        <kbd id="h" class="kbd">h</kbd>
+                        <kbd id="j" class="kbd">j</kbd>
+                        <kbd id="k" class="kbd">k</kbd>
+                        <kbd id="l" class="kbd">l</kbd>
+                      </div>
+                      <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd id="z" class="kbd">z</kbd>
+                        <kbd id="x" class="kbd">x</kbd>
+                        <kbd id="c" class="kbd">c</kbd>
+                        <kbd id="v" class="kbd">v</kbd>
+                        <kbd id="b" class="kbd">b</kbd>
+                        <kbd id="n" class="kbd">n</kbd>
+                        <kbd id="m" class="kbd">m</kbd>
+                        <kbd id="/" class="kbd">/</kbd>
+                      </div>
+                 </div>
+
+                 <div class="flex justify-around w-full">
+                    <div class="p-4 rounded-lg bg-[#0000005E] text-white font-bold border-2 border-slate-50 border-solid">Life <i class="fa-solid fa-heart-circle-bolt"></i> : <span id="life">6</span> </div>
+                    <div class="p-4 rounded-lg bg-[#0000005E] text-white font-bold border-2 border-slate-50 border-solid">Score <i class="fa-brands fa-screenpal"></i> : <span id="score">0</span> </div>
+            </div>
+           
+        </section>
+
+        <section class="grid place-content-center h-full hidden" id="sec3">
+            <div class="px-4 py-8 border-2 border-white bg-[#ffffff5E] rounded-xl flex items-center flex-col gap-10">
+                <h1 class="text-4xl font-semibold text-white">Your score is : <span id="finalScore">0</span></h1>
+                <div class="btn glass border-2 w-fit text-white border-white border-solid" id="tryAgain">Go Home</div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
